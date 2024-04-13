@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <system.h>
 #include <readline/readline.h>
 #include <readline/history.h>
 #include <time.h>
@@ -24,11 +25,21 @@ int main() {
         if (strcmp(input,"minisystem") == 0){
             minisystem();
         }
-	else if (strcmp(input,"date") == 0) {
+
+	    else if (strcmp(input,"date") == 0) {
             time_t now;
             time(&now);
             printf("%s", ctime(&now)); // ctime 함수를 사용해 현재 시간을 문자열로 변환하여 출력
         }
+
+        else if (strcmp(input,"startfork") == 0) {
+            new_fork();
+        }
+
+        else if (strcmp(input,"ipc") == 0) {
+            ipc_pipe();
+        }
+        
         else system(input);
     }
 
