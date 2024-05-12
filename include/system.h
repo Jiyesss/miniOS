@@ -6,5 +6,6 @@ void minisystem();
 int new_fork(void);
 int ipc_pipe(void);
 void calculate();
-int calculate_pi();
+// int calculate_pi();
 int rrscheduler();
+int monte_mutex();

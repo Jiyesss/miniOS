@@ -41,13 +41,17 @@ int main() {
         else if (strcmp(input,"ipc") == 0) {
             ipc_pipe();
         }
-
+        /*
         else if (strcmp(input,"pi") == 0) {
             calculate_pi();
         }
-
+        */
         else if (strcmp(input,"roundrobin") == 0) {
             rrscheduler();
+        }
+        
+        else if (strcmp(input,"multipi") == 0) {
+            monte_mutex();
         }
         
         else system(input);
