@@ -47,7 +47,7 @@ int main() {
         }
         */
         else if (strcmp(input,"roundrobin") == 0) {
-            rrscheduler();
+            rrscheduler2();
         }
         
         else if (strcmp(input,"multipi") == 0) {

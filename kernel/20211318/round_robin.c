@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
 // 프로세스 구조체 정의
 struct Process {
     int pid; // 프로세스 ID
@@ -80,3 +80,4 @@ void roundRobin(struct Process *processes, int n, int quantum) {
     printf("\nAverage waiting time = %f\n", (float)wait_time / n);
     printf("Average turnaround time = %f\n", (float)turnaround_time / n);
 }
+*/
